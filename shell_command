@@ -1,0 +1,8 @@
+1: 删除所有odoo 下非英文和中文的 翻译文件, egrep 使用正则匹配， -v 取反
+  find -regex  '.*\.po'|egrep -v  'zh_.*.po|en_.*.po'|xargs   rm
+
+2：删除目录下所有py文件，保留pyc 文件
+   find -regex '.*\.py$' |xargs rm
+   
+
+
