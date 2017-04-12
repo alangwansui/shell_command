@@ -4,5 +4,13 @@
 2：删除目录下所有py文件，保留pyc 文件
    find -regex '.*\.py$' |xargs rm
    
+3： 查看当前目录下所有文件夹大小，
+    du -ah --max-depth=1 
+    
+4： 删除N(15)天前的备份文件文件
+   find /backups/odoo -mtime +15 -name "*.zip" |xargs rm
+   
+   
+   
 
 
